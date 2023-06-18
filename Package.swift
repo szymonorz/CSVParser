@@ -2,5 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "CSVParser"
+    name: "CSVParser",
+    products: [
+        .library(
+            name: "CSVParser",
+            targets: ["CSVParser"])
+    ],
+    targets: [
+        .target(
+            name: "CSVParser")
+    ]
 )
